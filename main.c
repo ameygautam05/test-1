@@ -14,5 +14,18 @@ int binary_search(int arr[], int left, int right, int key) {
 }
 
 int main() {
-    print("Hello world\n");
+ int n;
+ scanf("%d ", n);
+ int arr[n];
+ printf("Enter size of array");
+ scanf("%d ", &n);
+ for(int i = 0; i < n; i++){
+    scanf("%d ", &n);
+    arr[i] = n;
+ }
+ printf("Enter  the element to search: ");
+ int key;
+ scanf("%d",&key);
+binary_search(arr,0,n-1,key);
+return 0;
 }
